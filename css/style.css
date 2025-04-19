@@ -142,33 +142,26 @@ header a {
     .container {
         text-align: center;
     }
-
     .talent {
         flex-direction: column;
         gap: 50px;
     }
-
     .talent__icon-line {
         display: none;
     }
-    
     .talent__title {
         font-size: 64px;
         line-height: 56px;
     }
-
     .talent__subtitle {
         font-size: 15px;
     }
-
     .background__left-image {
         display: none;
     }
-
     .background__bottom-image {
         left: 30%;
     }
-
     .header__menu {
         padding: 0 0 0 50px;
     }
@@ -178,23 +171,118 @@ header a {
     .header__menu {
         display: none;
     }
-
     .header__burger {
         display: block;
         margin-left: auto;
     } 
-    
     .background__bottom-image {
         left: 50%;
         transform: translateX(-50%);
     }
-
     .header__title {
         font-size: 40px;
         line-height: 40px;
     }
-
     .background {
         height: 100vh;
+    }
+}
+
+.background-approach {
+    background-color: #012F34;
+    height: 700px;
+    position: relative;
+    
+}
+
+.background-approach__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.approach {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.approach__icon img {
+    margin-top: -10px;
+}
+
+.approach__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.approach__columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.approach__column {
+    display: flex;
+    gap: 20px;
+}
+
+.approach__column-icon {
+    margin-bottom: 20px;
+}
+
+.approach__text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.approach__column-title {
+    color: #F67E7E;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.approach__column-subtitle {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+    .approach {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .approach__title {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 50px;
+        
+    }
+
+    .background-approach__image {
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .approach__column {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+.background-approach {
+    max-width:100%;
+    height:auto;
     }
 }
