@@ -20,6 +20,7 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    font-family: 'Livvic', sans-serif;
   }
   input,button,textarea{font-family:inherit;}
   input::-ms-clear{display: none;}
@@ -30,3 +31,145 @@
   ul li{list-style: none;}
   img{vertical-align: top;}
   h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.container {
+    max-width: 1110px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.background {
+    background-color: #014E56;
+    height: 700px;
+    position: relative;
+}
+
+.background__left-image {
+    position: absolute;
+    top: 300px;
+}
+
+.background__bottom-image {
+    position: absolute;
+    bottom: 0px;
+    right: 350px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 73px 20px;
+}
+
+header a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.header__nav {
+    width: 100%;
+}
+
+.header__menu {
+    display: flex;
+    padding: 0 0 0 80px;
+    flex: 1;
+    gap: 25px;
+    align-items: center;
+}
+
+.header__link:hover {
+    color: rgb(207, 207, 207);
+}
+
+.header__link--right {
+    margin-left: auto;
+}
+
+.header__link--contact {
+    display: block;
+    border: 2px solid #FFFFFF;
+    width: 153px;
+    height: 48px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.talent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.talent__title{
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: white;
+}
+
+.talent__title span {
+    color: #F67E7E;
+}
+
+.talent__line-subtitle{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.talent__subtitle{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        text-align: center;
+    }
+
+    .talent {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .talent__icon-line {
+        display: none;
+    }
+    
+    .talent__title {
+        font-size: 64px;
+        line-height: 56px;
+    }
+
+    .talent__subtitle {
+        font-size: 15px;
+    }
+
+    .background__left-image {
+        display: none;
+    }
+
+    .background__bottom-image {
+        left: 30%;
+    }
+
+    .header__menu {
+        padding: 0 0 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
