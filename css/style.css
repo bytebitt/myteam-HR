@@ -90,6 +90,7 @@ header a {
 
 .header__link:hover {
     color: #F67E7E;
+    transition-duration: 0.4s;
 }
 
 .header__link--right {
@@ -429,10 +430,12 @@ header a {
 
 .get-started__button:hover {
     background-color: #012F34;
+    transition-duration: 0.4s;
 }
 
 .get-started__button a:hover {
     color: white;
+    transition-duration: 0.4s;
 }
 
 .get-started__button {
@@ -497,6 +500,7 @@ header a {
 
 .footer__menu a:hover {
     color: #F67E7E;
+    transition-duration: 0.4s;
 }
 
 .footer__info p{
@@ -514,6 +518,7 @@ header a {
 
 .footer__icons img:hover {
     background-color:#F67E7E;
+    transition-duration: 0.4s;
 }
 
 .footer__icons-copy {
